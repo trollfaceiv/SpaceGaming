@@ -26,7 +26,81 @@
     src: url("../fonts/OpenSans-Light.ttf");
 }
 
+:root{
+    font-size: clamp(16px, 2vw, 24px);
+    --rosso: #f94635;
+    --azzurro: #41f5fd;
+    --verde: #41fe55;
+    --lilla: #7f91f7;
+    --viola: #30075d;
+    --nero: #02020c;
+    --error: #ee4037;
+    --success: #89c540;
+}
+
+input, select, textarea{
+
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.hide{
+    display: none !important;
+}
+
+.grid-x{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid-y{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.grid-inline{
+    display: inline-flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.cell{
+    flex-basis: 100%;
+}
+
+.field{
+    display: inline-flex;
+    align-items: center;
+}
+
+.field>input, .field>select, .field>textarea{
+    width: 100%;
+}
+
+.btn{
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(110%);
+}
+
+.field>input[disabled], .field>select[disabled], .field>textarea[disabled]{
+    background-color: grey;
+}
+
 h1 {
     font-weight: bold;
     font-style: normal;
+}
+
+a {
+    font-weight: normal;
+    font-style: italic;
 }
